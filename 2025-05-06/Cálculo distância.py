@@ -10,4 +10,4 @@ Tempo = int (input(10) m/s)
 if Tempo <=0:
 sys. exit ('informe tempo positivo')
 
-print (f"A distância percorrida é: {ditância_percorrida} metros")
+print (f"A distância percorrida é: {distância percorrida} metros")
