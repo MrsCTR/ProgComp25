@@ -21,3 +21,9 @@ if delta <0:
    sys.exit ('não é possível calcular o tempo')
 
 t = ( -v_inicial + delta ** 0.5) / (2 * acelera)
+
+hora = t // 3600
+t = t % 3600
+minuto = t // 60
+segundo = t % 60
+print ('tempo = {hora}:{minuto}:{segundo}')
