@@ -15,3 +15,9 @@ if acelera <=0:
 distância *= 1000
 
 v-inicial /= 3.6
+
+delta = v_inicial ** 2 - 4 * acelera * distancia
+if delta <0:
+   sys.exit ('não é possível calcular o tempo')
+
+t = ( -v_inicial + delta ** 0.5) / (2 * acelera)
