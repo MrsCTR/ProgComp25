@@ -5,9 +5,7 @@ import sys
 try:
    Multiplicador = int(input('Informe o Multiplicador: '))
 except ValueError:
-   sys.exit('ERRO: Informe um valor inteiro...')
-except Exception as e:
-   sys.exit(f'ERRO {e}')
+   sys.exit('ERRO: Informe um valor inteiro...')   
 else:  
    if Multiplicador <= 0:
       sys.exit('ERRO: Informe um valor inteiro positivo...')
