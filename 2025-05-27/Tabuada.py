@@ -1,18 +1,21 @@
-# Solicita o número para calcular
+'''
+   Programa para exibir a tabuada de multiplicação de
+   um determinado número inteiro positivo
+'''
 
 import sys
-
 try:
-   Multiplicador = int(input('Informe o Multiplicador: '))
-except ValueError:
-   sys.exit('ERRO: Informe um valor inteiro...')   
-else:  
-   if Multiplicador <= 0:
-      sys.exit('ERRO: Informe um valor inteiro positivo...')
+   intMultiplicador = int(input('Informe o Multiplicador: '))  
 
-   Multiplicando = 1
-   while Multiplicando <= 10:
-      print(f'{Multiplicador} x  {Multiplicando} = {Multiplicador * Multiplicando}')
-      Multiplicando += 1
-
+   if intMultiplicador <= 0 or intMultiplicador > 10:
+         sys.exit('ERRO: Informe um valor inteiro positivo e que não seja maior que 10...')
+   intMultiplicando = 1
+   while intMultiplicando <= 10:
+      print(f'{intMultiplicador} x  {intMultiplicando} = {intMultiplicador * intMultiplicando}')
+      intMultiplicando += 1
    print('FIM DA TABUADA...')
+
+except ValueError:
+   sys.exit('ERRO: Informe um valor inteiro...')
+except Exception as e:
+   sys.exit(f'ERRO {e}')
