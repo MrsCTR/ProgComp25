@@ -5,23 +5,23 @@ import sys
 
 try:
     
-    numero1 = int(input('Informe o primeiro numero inteiro positivo (Multiplicador): '))
-    numero2 = int(input('Informe o segundo numero inteiro positivo (Multiplicando): '))
-
-    if numero1 <= 0 or numero2 <= 0:
-        sys.exit('ERRO: Os numeros devem ser inteiro positivo.')
-
-    Resultado = 0
-    Contador = 0
-    Expressão = " "
-
-    while Contador < numero2:
-        Resultado += numero1
-        Expressão += f'{numero1} + ' if Contador < numero2 - 1 else f"numero1"
-        
-        print(f'{Expressão} total {Resultado}')
-        Contador += 1
+    intmultiplicador = int(input('Informe o primeiro numero inteiro positivo (Multiplicador): '))
+    intmultiplicando = int(input('Informe o segundo numero inteiro positivo (Multiplicando): '))
 except ValueError:
-    sys.exit('ERRO: Por favor, valores inteiros válidos.')
+    sys.exit('ERRO: Não foi informado um valor inteiro válido...')
 except Exception as e:
     sys.exit(f'ERRO: {e}')
+else:
+    if intmultiplicador <= 0:
+        sys.exit('ERRO: Informe multiplicador positivo...')
+
+    if intmultiplicando <= 0:
+        sys.exit('ERRO: Informe multiplicando positivo...')
+
+    intproduto = 0
+    Contador = 1
+    while Contador <= intmultiplicando:
+        intproduto += intmultiplicando
+        Contador += 1
+
+    print(f'{intmultiplicador} x {intmultiplicando} = {intproduto}')
