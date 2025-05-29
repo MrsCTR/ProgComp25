@@ -10,10 +10,10 @@ c) A média dos números inteiros positivos;
 O valor 0 digitado não deve ser considerado em nenhum dos itens acima.
 '''
 
-intvalor          = None
-intsomapositivos  = 0
-intqtvalores      = 0
-intqtvalpositivos = 0
+intvalor = None
+intsomapositivos = 0
+intquantvalores = 0
+intquantvalpositivos = 0
 
 
 while intvalor != 0:
@@ -23,14 +23,14 @@ while intvalor != 0:
       print('ERRO: Valor inteiro inválido...')
     except Exception as e:
       print(f'ERRO: {e}')
-else:
-    if intvalor > 0: 
+    else:
+      if intvalor > 0: 
        intsomapositivos += intvalor
-       intqtvalpositivos += 1
+       intquantvalpositivos += 1
+       
+       if intvalor != 0:
+         intquantvalores += 1
 
-    if intvalor != 0:
-      intqtvalores += 1
-
-print(f'Quantos números inteiros foram digitados: {intqtvalores}')
+print(f'Quantos números inteiros foram digitados: {intquantvalores}')
 print(f'Soma dos números inteiros positivos.....: {intsomapositivos}')
-print(f'Média dos números inteiros positivos....: {intsomapositivos / intqtvalpositivos}')
+print(f'Média dos números inteiros positivos....: {intsomapositivos / intquantvalpositivos}')
