@@ -12,14 +12,15 @@ O valor 0 digitado não deve ser considerado em nenhum dos itens acima.
 
 intvalor = None
 somapositivos = 0
-quantvalpositivos = 0
 quantvalores = 0
+quantvalpositivos = 0
+
 
 while intvalor != 0:
     try:
-        intnumero = int(input('Informe um número inteiro positivo: '))
+        intvalor = int(input('Informe um valor inteiro: '))
     except ValueError:
-      print('ERRO: Informe um número inteiro válido...')
+      print('ERRO: Valor inteiro inválido...')
     except Exception as e:
       print(f'ERRO: {e}')
 else:
@@ -30,6 +31,6 @@ else:
     if intvalor != 0:
       quantvalores += 1
 
-print(f'quantidade dos números inteiros positivos...: {quantvalpositivos}')
-print(f'soma dos números inteiros positivos...: {somapositivos}')
-print(f'média dos números inteiros positivos...: {somapositivos/quantvalpositivos}')
+print(f'Quantos números inteiros digitados:{quantvalores}')
+print(f'Soma dos números inteiros positivos:{somapositivos}')
+print(f'Média dos números inteiros positivos:{somapositivos/quantvalpositivos}')
