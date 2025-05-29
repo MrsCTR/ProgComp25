@@ -5,11 +5,13 @@ Faça um programa que solicite um valor inteiro ao usuário,
 em seguida calcule e exiba o fatorial do número informado.
 '''
 
+import sys
 
 
 while intValor != 0:
    try:
       intValor = int(input('Informe um valor inteiro: '))
+      sys.exit 
    except ValueError:
       print('ERRO: Valor Inteiro Inválido...')
    except Exception as e:
