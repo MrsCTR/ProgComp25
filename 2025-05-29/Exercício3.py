@@ -13,7 +13,7 @@ else:
         print('Não existe fatorial')
     elif intvalor <2:
         print(f'{intvalor} != 1')
-        else:
+    else:
         intfatorial = intvalor
         intaux = intvalor
 
