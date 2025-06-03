@@ -31,5 +31,6 @@ intProduto  = 0
       intContador += 1
 '''
 
-for intContador in range(1, +1):
+for intContador in range(intMultiplicador):
+   intProduto  += intMultiplicando
    print(f'{intMultiplicador} x {intMultiplicando} = {intProduto}')
