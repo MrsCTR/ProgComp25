@@ -23,10 +23,14 @@ else:
       sys.exit('ERRO: Informe uma Potência Positiva...')
 
    intPotenciacao = 1
+
+'''
    intContador    = 1
    while intContador <= intPotencia:
       intPotenciacao *=  intBase
       intContador    += 1
+'''
 
+for intContador in range(1):
    print(f'{intBase} ** {intPotencia} = {intPotenciacao}')
    
