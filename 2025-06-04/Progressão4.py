@@ -14,3 +14,26 @@
       e) Solicite um outro valor inteiro n correspondente a enésima posição 
          de um elemento da P.G. e exibir o valor desse elemento.
 '''
+
+import sys
+
+
+
+try:
+   Razao = int(input)
+   QuantidadeElementos = int(input('Informe a quantidade de números da sequência'))
+except ValueError:
+   sys.exit('ERRO: Informe um inteiro válido...')
+except Exception as e:
+   sys.exit(f'ERRO: {e}')
+else:
+   if Razao == 0:
+      sys.exit('Erro: a razão deve ser diferente de zero')
+
+   if QuantidadeElementos <= 0:
+      sys.exit('Erro: a quantidade de elementos deve ser positiva')
+
+ElementoPG = ValorInicial
+
+print('\n elementos da P.G.')
+print()
