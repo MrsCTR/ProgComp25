@@ -17,10 +17,9 @@
 
 import sys
 
-
-
 try:
-   Razao = int(input)
+   ValorInicial = int(input('Informe o valor inicial'))
+   Razao = int(input('Informe a razão da P.G.'))
    QuantidadeElementos = int(input('Informe a quantidade de números da sequência'))
 except ValueError:
    sys.exit('ERRO: Informe um inteiro válido...')
@@ -36,4 +35,7 @@ else:
 ElementoPG = ValorInicial
 
 print('\n elementos da P.G.')
-print()
+print(f'{ElementoPG}, ', end = '')
+
+for _ in range(2, QuantidadeElementos + 1):
+   
