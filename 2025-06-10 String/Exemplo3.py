@@ -10,4 +10,4 @@ for strLetra in strTexto:
     if strLetra in strVogais:
         Vogais += 1
 
-        print()
+        print(f'Otexto possui {Vogais} vogais')
