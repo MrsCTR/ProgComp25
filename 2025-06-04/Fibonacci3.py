@@ -5,31 +5,32 @@
    Implemente um programa que receba um número inteiro n e retorne os n 
    primeiros termos da sequência de Fibonacci.
 '''
+
 import sys
 
 try:
-   QuantidadeNumeros = int(input('Informe a quantidade de números da sequência'))
+   intQtNumeros = int(input('Digite a quantidade de elementos da Sequência de Fibonacci: '))
 except ValueError:
    sys.exit('ERRO: Informe um inteiro válido...')
 except Exception as e:
    sys.exit(f'ERRO: {e}')
 else:
-    if QuantidadeNumeros < 2:
-       sys.exit('Erro: a sequência de Fibonacci deve possuir pelo menos 2 números')
+   if intQtNumeros < 2:
+      sys.exit('ERRO: a Sequência de Fibonacci deve possuir pelo menos 2 números')
 
-       NumeroAtual = 1
-       ProximoNumero = 1
-       print(f'{NumeroAtual}, {ProximoNumero},', end = '') 
+   intNumeroAtual   = 1
+   intProximoNumero = 1
+   print(f'{intNumeroAtual}, {intProximoNumero}, ', end = '')
 
-if QuantidadeNumeros == 2:
-   sys.exit('\n')
+   if intQtNumeros == 2:
+      sys.exit('\n')
 
-for _ in range(3, QuantidadeNumeros + 1):
-   # Auxiliar = ProximoNumero
-   # ProximoNumero = ProximoNumero + NumeroAtual
-   # NumeroAtual = Auxiliar
+   for _ in range(3, intQtNumeros + 1):
+      #intAuxiliar      = intProximoNumero 
+      #intProximoNumero = intProximoNumero + intNumeroAtual
+      #intNumeroAtual   = intAuxiliar
 
-   NumeroAtual, ProximoNumero = ProximoNumero, ProximoNumero
-   print(f'{ProximoNumero},', end = '')
-
-print('\n')
+      intNumeroAtual, intProximoNumero = intProximoNumero, intProximoNumero + intNumeroAtual
+      print(f'{intProximoNumero}, ', end = '')
+      
+   print('\n')
