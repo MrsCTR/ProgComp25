@@ -33,4 +33,8 @@ strTexto = 'Python é uma linguagem de programação de alto nível, interpretad
    'do mundo da programação, sendo ideal tanto para projetos simples quanto para sistemas de grande escala. Seu crescimento constante ' \
    'e sua capacidade de adaptação a novas demandas tecnológicas garantem que Python continuará sendo uma peça central no futuro da computação.'
 
-strPalavra = input('Digite uma palavra: ')
+strPalavra = input('Digite uma palavra: ').lower().strip()
+
+Quantidade = strTexto.lower().count(strPalavra) 
+
+print(f'A palavra {strPalavra} aparece {Quantidade} vezes no texto')
