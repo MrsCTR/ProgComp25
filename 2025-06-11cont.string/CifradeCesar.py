@@ -19,14 +19,21 @@
       Informe o Deslocamento : 6
       Mensagem cifrada ......: Uré2*'Sútsj&868;'
 '''
-strMensagem = input('Digite a mensagem...:')
+import sys
 
-Deslocamento_Cifra = int(input("informe o Deslocamento_Cifra:"))
-
-Mensagem_Cifrada = ""
-
-for caractere in strMensagem:
+try:
     
-    Mensagem_Cifrada += chr(ord (caractere) + Deslocamento_Cifra)
+    strMensagem = input('Digite a mensagem...:')
+    Deslocamento_Cifra = int(input("informe o Deslocamento_Cifra:"))
+except ValueError:
+   sys.exit('ERRO: Informe um inteiro válido...')
+except Exception as e:
+   sys.exit(f'ERRO: {e}')
+else:
+    Mensagem_Cifrada = ''
+
+for strLetra in strMensagem:
+    
+    Mensagem_Cifrada += chr(ord (strLetra) + Deslocamento_Cifra)
     
     print("Mensagem_Cifrada......:", Mensagem_Cifrada)
