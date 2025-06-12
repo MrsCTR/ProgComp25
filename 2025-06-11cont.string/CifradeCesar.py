@@ -27,6 +27,6 @@ Mensagem_Cifrada = ""
 
 for caractere in strMensagem:
     
-    Mensagem_Cifrada += chr(ord(caractere) + Deslocamento_Cifra)
+    Mensagem_Cifrada += chr(ord (caractere) + Deslocamento_Cifra)
     
     print("Mensagem_Cifrada......:", Mensagem_Cifrada)
