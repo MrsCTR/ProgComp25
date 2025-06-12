@@ -29,4 +29,4 @@ for caractere in strMensagem:
     
     Mensagem_Cifrada += chr(ord(caractere) + Deslocamento_Cifra)
     
-    print("Mensagem_Cifrada....:", Mensagem_Cifrada)
+    print("Mensagem_Cifrada......:", Mensagem_Cifrada)
