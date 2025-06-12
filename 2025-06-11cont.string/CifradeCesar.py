@@ -19,3 +19,14 @@
       Informe o Deslocamento : 6
       Mensagem cifrada ......: Uré2*'Sútsj&868;'
 '''
+strMensagem = input('Digite a mensagem...:')
+
+Deslocamento_Cifra = int(input("informe o Deslocamento_Cifra:"))
+
+Mensagem_Cifrada = ""
+
+for caractere in strMensagem:
+    
+    Mensagem_Cifrada += chr(ord(caractere) + Deslocamento_Cifra)
+    
+    print("Mensagem_Cifrada....:", Mensagem_Cifrada)
