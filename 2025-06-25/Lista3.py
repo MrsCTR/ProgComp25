@@ -35,7 +35,7 @@ else:
         intValor = random.randint(-100, +100)
 
         listaValores.append(intValor)
-        listaTrios.append(intValor-1, intValor, intValor+1)
+        listaTrios.append([intValor-1, intValor, intValor+1])
 
     print(listaValores)    
     print(listaTrios)
