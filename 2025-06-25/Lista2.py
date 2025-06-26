@@ -27,7 +27,6 @@ else:
         sys.exit('ERRO: Informe um valor entre 1 e 100... \n')
 
 
-
     listaValores = list()
 
     Contador = 1
