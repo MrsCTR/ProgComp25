@@ -20,28 +20,23 @@ except ValueError:
 except Exception as erro:
     sys.exit(f'\nERRO: {erro}...\n')
 else:
-    if intNumero > 100 or intPosicao <= 0:
-        print('ERRO: intNumero inválido (deve ser maior ou igual a 0) ou intPosicao fora do intervalo permitido (0 a 100).')
+    if intNumero <= 0 or intNumero > 100:
+        sys.exit('ERRO: Informe um valor entre 1 e 100... \n')
 
-    try:
-        tamanho_N = int(input('Informe o tamanho da lista (N, entre 1 e 100): '))
-        if 1 <= tamanho_N <= 100:
-            
-        else:
-            print('ERRO: O tamanho N deve ser um número inteiro entre 1 e 100.')
-    except ValueError:
-        sys.exit('\nERRO: Informe um valor inteiro válido para N.\n')
-    except Exception as erro:
-        sys.exit(f'\nERRO inesperado: {erro}\n')
 
-VMinimo = -100
-VMaximo = 100
-lista_principal = [random.randint(VMinimo, VMaximo) for _ in range(tamanho_N)]
 
-print(f'\nLista principal gerada ({tamanho_N} elementos):')
-print(lista_principal)
+listaValores = list()
 
-lista_pares = [numero for numero in lista_principal if numero % 2 == 0]
+for _ in range(intNumero):
+    intvalor = random.randint(-100, 100)
+    listaValores.append(intvalor)
 
-print('\nLista com apenas os números pares:')
+print(listaValores)
+
+lista_pares = list()
+
+for intvalor in listaValores:
+    if intvalor % 2 == 0:
+        lista_pares.append(intvalor)
+
 print(lista_pares)
