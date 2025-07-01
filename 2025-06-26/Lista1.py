@@ -57,8 +57,7 @@ for boletim in listaboletins:
         situacao = 'Reprovado'
 
 
-
-   boletim.extend([media, situacao])
+boletim.extend([media, situacao])
 
 
 # ----------------------------------------------------------------------
