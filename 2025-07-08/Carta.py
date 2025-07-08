@@ -10,3 +10,15 @@ Nossas legiões, disciplinadas e ávidas pela vitória, devem então se lançar 
 
 Ave César.'''
 
+try:
+    arqLeitura = open('Carta.text', 'r')
+
+except FileNotFoundError:
+    print('Erro: Arquivo não encontrado!')
+except Exception as erro:
+    print(f'Erro:{erro}!')
+    
+else:
+    strConteudo = arqLeitura.readlines()
+    arqLeitura.close()
+    print(strConteudo)
