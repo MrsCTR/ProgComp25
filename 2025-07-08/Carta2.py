@@ -15,7 +15,6 @@ else:
     while True:
        strConteudo = arqLeitura.readline()
        if not strConteudo: break
-       print('_' * 10)
        print(strConteudo.strip())
     
     arqLeitura.close()
