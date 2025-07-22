@@ -30,7 +30,13 @@ else:
 # Informando o nome do clube    
 strClube = input('Informe o nome do clube: ').strip().lower()
 
-# Listando os atletas do clube informado
+# Obtendo o ID do clube informado
+for cartola_fc_2024 in strClube.split():
+    if strClube in cartola_fc_2024.keys():
 
+
+# Listando os atletas do clube informado
+lstAux = dictCartola['atletas']
+#clube_id = ['clube_atleta']
 
    
