@@ -46,4 +46,7 @@ lstAtletasClube = list(filter(lambda atleta: atleta['clube_id'] == intIDClube,
 lstAtletasClube.sort(key=lambda atleta: atleta['nome'])
    
 for atleta in lstAtletasClube:
-    print(f'\n {atleta['nome']} ({atleta['apelido']})')
+
+
+    strPosicaoAtleta = dictCartola['posicoes'] [str(atleta['posicao_id'])] ['nome']
+    print(f'{atleta['nome']} ({atleta['apelido']}) - {strPosicaoAtleta}')
