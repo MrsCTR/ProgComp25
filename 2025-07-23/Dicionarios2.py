@@ -46,4 +46,4 @@ lstAtletasClube = list(filter(lambda atleta: atleta['clube_id'] == intIDClube,
 lstAtletasClube.sort(key=lambda atleta: atleta['nome'])
    
 for atleta in lstAtletasClube:
-    print(f'{atleta['nome']} ({atleta['apelido']})')   
+    print(f'\n {atleta['nome']} ({atleta['apelido']})')
