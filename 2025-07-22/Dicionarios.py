@@ -17,7 +17,9 @@ except json.JSONDecodeError:
 except Exception as erro:
     sys.exit(f'Erro: {erro}...')
 else:
-    lstChaves = list(dictCartola.keys()) # ['clubes', 'posicoes', 'status', 'atletas']
+    #lstChaves = list(dictCartola.keys()) # ['clubes', 'posicoes', 'status', 'atletas']
+    
+    
     '''
     dictCartola = { 'clubes': {...}, 'posicoes': {...}, 'status': {...}, 'atletas': [...]
 
@@ -31,9 +33,12 @@ else:
 strClube = input('Informe o nome do clube: ').strip().lower()
 
 # Obtendo o ID do clube informado
+
+
+
 for cartola_fc_2024 in strClube.split():
     if strClube in cartola_fc_2024.keys():
-
+      dictCartola['clubes']
 
 # Listando os atletas do clube informado
 lstAux = dictCartola['atletas']
