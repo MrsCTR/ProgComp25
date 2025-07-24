@@ -1,7 +1,7 @@
 import requests, sys
 
 try:
-    reqHTTP = requests.get('https://api.cartolafc.globo.com/atletas/mercado')
+    reqHTTP = requests.get('https://viacep.com.br/ws/59575000/json')
 
 except Exception as erro:
     sys.exit(f'Erro: {erro}')
