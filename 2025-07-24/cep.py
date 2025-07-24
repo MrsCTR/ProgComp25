@@ -1,8 +1,9 @@
 import requests, sys
 
-try:
-    reqHTTP = requests.get('https://viacep.com.br/ws/59575000/json')
+strCEP = input('Informe o CEP: ')
 
+try:
+    reqHTTP = requests.get('https://viacep.com.br/ws/{strCEP}/json')
 except Exception as erro:
     sys.exit(f'Erro: {erro}')
 else:
