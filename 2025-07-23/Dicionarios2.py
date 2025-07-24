@@ -50,6 +50,4 @@ for atleta in lstAtletasClube:
 
     strPosicaoAtleta = dictCartola['posicoes'] [str(atleta['posicao_id'])] ['nome']
     print(f'{atleta['nome']} ({atleta['apelido']}) - {strPosicaoAtleta}')
-
-
 # obter a pontuação do atleta
