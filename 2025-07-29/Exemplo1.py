@@ -15,4 +15,3 @@ else:
         print(erro)
     else:
         print(f'Média = {MediaFinal}')
- 
