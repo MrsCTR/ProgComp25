@@ -1,4 +1,4 @@
-def SituacaoFinal(Media:int, ProvaFinal:int, Reprovado:int):
+def SituacaoFinal(Media:int)-> str:
     if not isinstance(Media, int):
         raise ValueError('Informe media inteiro')
     if Media <0 or Media >100:
